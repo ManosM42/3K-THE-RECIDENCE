@@ -3,14 +3,18 @@ import { motion } from "framer-motion";
 import { PlaceCard } from "@/components/PlaceCard";
 import { useI18n, pick } from "@/lib/i18n";
 import { categoryMeta, placesByCategory, type Category } from "@/data/places";
+import image from  "@/assets/peskesi.jpg";
+import image2 from  "@/assets/karteros.jpg";
+import image3 from  "@/assets/knossos.jpg";
+import image4 from  "@/assets/lunapark.jpg";
 
 const VALID: Category[] = ["restaurants", "beaches", "attractions", "entertainment"];
 
 const HERO: Record<Category, string> = {
-  restaurants: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80",
-  beaches: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80",
-  attractions: "https://images.unsplash.com/photo-1605346495257-7e4d5b1aab38?auto=format&fit=crop&w=1920&q=80",
-  entertainment: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1920&q=80",
+  restaurants: image,
+  beaches: image2,
+  attractions: image3,
+  entertainment: image4,
 };
 
 export const Route = createFileRoute("/nearby/$category/")({
