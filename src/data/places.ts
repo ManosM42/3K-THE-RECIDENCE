@@ -1,3 +1,12 @@
+import image from "@/assets/peskesi.jpg";
+import image2 from "@/assets/kastella.jpg";
+import image3 from "@/assets/kouzineri.jpg";
+import image4 from "@/assets/archipelagos.jpg";
+import image5 from "@/assets/apiri.jpg";
+import image6 from "@/assets/amalias.jpg";
+import image7 from "@/assets/papafigos.jpg";
+import image8 from "@/assets/chalali.jpg";
+
 export type Category = "restaurants" | "beaches" | "attractions" | "entertainment";
 
 export type Place = {
@@ -21,7 +30,7 @@ const img = (id: string, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 export const places: Place[] = [
-  // RESTAURANTS
+  // ADDITIONAL RESTAURANTS
   {
     id: "peskesi",
     category: "restaurants",
@@ -43,190 +52,189 @@ export const places: Place[] = [
       gr: "Ζητήστε το απάκι — καπνιστό χοιρινό με βότανα.",
     },
     lat: 35.3397, lng: 25.1340,
-    image: img("photo-1414235077428-338989a2e8c0"),
-    gallery: [
-      img("photo-1414235077428-338989a2e8c0"),
-      img("photo-1559339352-11d035aa65de"),
-      img("photo-1551218808-94e220e084d2"),
-    ],
+    image: image ,
+    gallery: []
   },
-  {
-    id: "brilliant-buffet",
-    category: "restaurants",
-    name: { en: "Brilliant Buffet", gr: "Brilliant Buffet" },
-    shortDescription: {
-      en: "Refined Mediterranean tasting menu inside the Lato Hotel.",
-      gr: "Εκλεπτυσμένο μεσογειακό μενού στο ξενοδοχείο Lato.",
-    },
-    description: {
-      en: "An award-winning rooftop kitchen overlooking the Venetian harbor. Chef-led Mediterranean plates, an extensive Greek wine list, and one of the best harbor sunsets in town.",
-      gr: "Βραβευμένη κουζίνα ταράτσας με θέα στο Ενετικό λιμάνι. Μεσογειακά πιάτα, εκτενής λίστα ελληνικών κρασιών και θέα ηλιοβασιλέματος.",
-    },
-    distance: "1.3 km",
-    rating: 4.7,
-    type: { en: "Mediterranean · Rooftop", gr: "Μεσογειακή · Ταράτσα" },
-    bestSeason: { en: "Spring to autumn", gr: "Άνοιξη – Φθινόπωρο" },
-    tip: { en: "Book the corner table for harbor views.", gr: "Κλείστε γωνιακό τραπέζι για τη θέα." },
-    lat: 35.3401, lng: 25.1328,
-    image: img("photo-1466978913421-dad2ebd01d17"),
-    gallery: [
-      img("photo-1466978913421-dad2ebd01d17"),
-      img("photo-1592861956120-e524fc739696"),
-      img("photo-1414235077428-338989a2e8c0"),
-    ],
+{
+  id: "apiri-greek-eatery",
+  category: "restaurants",
+  name: { en: "Apiri Greek Eatery", gr: "Apiri Greek Eatery" },
+  shortDescription: {
+    en: "Modern Greek cuisine with a creative Mediterranean twist.",
+    gr: "Μοντέρνα ελληνική κουζίνα με δημιουργική μεσογειακή πινελιά.",
   },
-  {
-    id: "ligo-krasi-ligo-thalassa",
-    category: "restaurants",
-    name: { en: "Ligo Krasi Ligo Thalassa", gr: "Λίγο Κρασί Λίγο Θάλασσα" },
-    shortDescription: {
-      en: "Seaside fish taverna, feet from the waves.",
-      gr: "Παραθαλάσσια ψαροταβέρνα, στα βότσαλα.",
-    },
-    description: {
-      en: "A romantic, family-run taverna whose name means 'a little wine, a little sea'. Daily catch grilled simply with lemon and Cretan olive oil, served on a stone terrace overlooking the Aegean.",
-      gr: "Ρομαντική οικογενειακή ταβέρνα. Φρεσκοψημένα ψάρια ημέρας με λεμόνι και κρητικό λάδι, σε πέτρινο εξώστη πάνω από το Αιγαίο.",
-    },
-    distance: "2.1 km",
-    rating: 4.6,
-    type: { en: "Seafood · Taverna", gr: "Ψαροταβέρνα" },
-    bestSeason: { en: "April – October", gr: "Απρίλιος – Οκτώβριος" },
-    tip: { en: "Order the grilled octopus and a chilled Vidiano.", gr: "Δοκιμάστε χταπόδι σχάρας με Βιδιανό." },
-    lat: 35.3412, lng: 25.1198,
-    image: img("photo-1414235077428-338989a2e8c0"),
-    gallery: [
-      img("photo-1414235077428-338989a2e8c0"),
-      img("photo-1505253758473-96b7015fcd40"),
-      img("photo-1559339352-11d035aa65de"),
-    ],
+  description: {
+    en: "A stylish eatery near the historic centre serving contemporary takes on Greek classics. Premium ingredients, refined plating, and a sleek atmosphere make it ideal for visitors seeking a modern spin on Hellenic gastronomy.",
+    gr: "Κομψό εστιατόριο κοντά στο ιστορικό κέντρο με σύγχρονη εκδοχή της ελληνικής κουζίνας. Premium πρώτες ύλες, προσεγμένο plating και κομψό περιβάλλον.",
   },
-  {
-    id: "erganos",
-    category: "restaurants",
-    name: { en: "Erganos Traditional Cretan", gr: "Έργανος" },
-    shortDescription: {
-      en: "Rustic farmhouse plates inside a museum-like setting.",
-      gr: "Παραδοσιακή κουζίνα σε μουσειακό περιβάλλον.",
-    },
-    description: {
-      en: "Erganos feels like stepping into a Cretan grandmother's kitchen. Carved wooden interiors, hand-painted plates, and dishes like gamopilafo (wedding rice) and antikristo lamb cooked the old way.",
-      gr: "Σαν να μπαίνετε στην κουζίνα μιας Κρητικιάς γιαγιάς. Σκαλιστά ξύλα, γαμοπίλαφο, αντικριστό αρνί στην παλιά συνταγή.",
-    },
-    distance: "1.0 km",
-    rating: 4.7,
-    type: { en: "Traditional Cretan", gr: "Παραδοσιακή Κρητική" },
-    bestSeason: { en: "Year-round", gr: "Όλο τον χρόνο" },
-    tip: { en: "Save room for loukoumades drizzled with thyme honey.", gr: "Αφήστε χώρο για λουκουμάδες με μέλι θυμαρίσιο." },
-    lat: 35.3389, lng: 25.1335,
-    image: img("photo-1559339352-11d035aa65de"),
-    gallery: [
-      img("photo-1559339352-11d035aa65de"),
-      img("photo-1414235077428-338989a2e8c0"),
-      img("photo-1551218808-94e220e084d2"),
-    ],
+  distance: "1.1 km",
+  rating: 4.7,
+  type: { en: "Mediterranean · Modern Greek", gr: "Μεσογειακή · Μοντέρνα Ελληνική" },
+  bestSeason: { en: "Year-round", gr: "Όλο τον χρόνο" },
+  tip: {
+    en: "Great choice for a creative dinner near the old town.",
+    gr: "Ιδανικό για δημιουργικό δείπνο κοντά στην παλιά πόλη.",
   },
+  lat: 35.3383, lng: 25.1350,
+  image: image5 ,
+  gallery: []
+  
+},
+{
+  id: "sir-papafigos",
+  category: "restaurants",
+  name: { en: "Sir Papafigos", gr: "Sir Papafigos" },
+  shortDescription: {
+    en: "Fine-dining vibes with creative Greek plates and cocktails.",
+    gr: "Fine dining ατμόσφαιρα με δημιουργικά ελληνικά πιάτα και cocktails.",
+  },
+  description: {
+    en: "Heraklion's go-to for a sophisticated night out. Sir Papafigos blends fine-dining aesthetics with locally rooted Cretan flavours, standout cocktails, and a polished interior — perfect for a date night or special occasion.",
+    gr: "Η κορυφαία επιλογή για βραδινή έξοδο στο Ηράκλειο. Συνδυάζει fine dining αισθητική με κρητικές γεύσεις, εξαιρετικά cocktails και σοφιστικέ περιβάλλον.",
+  },
+  distance: "1.0 km",
+  rating: 4.9,
+  type: { en: "Fine Dining · Creative Greek", gr: "Fine Dining · Δημιουργική Ελληνική" },
+  bestSeason: { en: "Year-round", gr: "Όλο τον χρόνο" },
+  tip: {
+    en: "Open from 1 pm on weekends; weekdays from 5 pm — plan accordingly.",
+    gr: "Σαββατοκύριακα από 13:00, καθημερινές από 17:00 — προγραμματίστε ανάλογα.",
+  },
+  lat: 35.3400, lng: 25.1325,
+  image: image7,
+  gallery: [
+   
+  ],
+},
+{
+  id: "chalali",
+  category: "restaurants",
+  name: { en: "Chalali", gr: "Chalali" },
+  shortDescription: {
+    en: "Generous portions of authentic Greek comfort food.",
+    gr: "Γενναιόδωρες μερίδες αυθεντικού ελληνικού comfort food.",
+  },
+  description: {
+    en: "A beloved taverna on Riga Feraiou Square, Chalali is famous for its grills, slow-cooked dishes, and warm family service. Big portions, honest prices, and a lively square-side table — a local favourite equally loved by visitors.",
+    gr: "Αγαπημένη ταβέρνα στην Πλατεία Ρήγα Φεραίου. Ψητά, μαγειρευτά, φιλική εξυπηρέτηση και μεγάλες μερίδες σε καλές τιμές.",
+  },
+  distance: "1.4 km",
+  rating: 4.8,
+  type: { en: "Traditional Greek · Taverna", gr: "Παραδοσιακή Ελληνική · Ταβέρνα" },
+  bestSeason: { en: "Year-round", gr: "Όλο τον χρόνο" },
+  tip: {
+    en: "Grab a square-facing table and order the mixed grill.",
+    gr: "Πιάστε τραπέζι με θέα στην πλατεία και παραγγείλτε μικτή σχάρα.",
+  },
+  lat: 35.3367, lng: 25.1372,
+  image: image8,
+  gallery: [
+    
+  ],
+},
+{
+  id: "kastella-seafood",
+  category: "restaurants",
+  name: { en: "Kastella Seafood Restaurant", gr: "Kastella Seafood Restaurant" },
+  shortDescription: {
+    en: "Fresh fish and seafood by the Heraklion waterfront.",
+    gr: "Φρέσκο ψάρι και θαλασσινά στο παραλιακό μέτωπο.",
+  },
+  description: {
+    en: "Perched on the seafront promenade, Kastella specialises in the day's freshest catch prepared in Mediterranean style. A relaxed summer atmosphere, sunset views, and a menu built around the sea make it a top pick for a seaside dinner.",
+    gr: "Στο παραλιακό μέτωπο του Ηρακλείου, η Kastella ειδικεύεται σε φρέσκο ψάρι και θαλασσινά με μεσογειακές γεύσεις και χαλαρή καλοκαιρινή ατμόσφαιρα.",
+  },
+  distance: "1.5 km",
+  rating: 4.7,
+  type: { en: "Seafood · Waterfront", gr: "Θαλασσινά · Παραλιακό" },
+  bestSeason: { en: "Spring to autumn", gr: "Άνοιξη – Φθινόπωρο" },
+  tip: {
+    en: "Arrive before sunset for the best light over the harbour.",
+    gr: "Φτάστε πριν το ηλιοβασίλεμα για την καλύτερη θέα στο λιμάνι.",
+  },
+  lat: 35.3417, lng: 25.1296,
+  image: image2,
+  gallery: [
 
-  // BEACHES
-  {
-    id: "amnisos-beach",
-    category: "beaches",
-    name: { en: "Amnisos Beach", gr: "Παραλία Αμνισού" },
-    shortDescription: {
-      en: "Long sandy bay with shallow turquoise water.",
-      gr: "Μακρά αμμώδης παραλία με ρηχά γαλαζοπράσινα νερά.",
-    },
-    description: {
-      en: "Once the harbor of Minoan Knossos, Amnisos blends archaeology with golden sand. Family-friendly shallows, taverna umbrellas, and a sunset that lights up Dia island on the horizon.",
-      gr: "Άλλοτε το λιμάνι της Μινωικής Κνωσού, ο Αμνισός συνδυάζει αρχαιολογία με χρυσή άμμο. Φιλικός για οικογένειες, με ταβέρνες και θέα στη Δία.",
-    },
-    distance: "4.8 km",
-    rating: 4.5,
-    type: { en: "Organized · Sandy", gr: "Οργανωμένη · Αμμώδης" },
-    bestSeason: { en: "May – October", gr: "Μάιος – Οκτώβριος" },
-    tip: { en: "Visit the Minoan ruins at the western end of the beach.", gr: "Δείτε τα Μινωικά ερείπια στο δυτικό άκρο." },
-    lat: 35.3372, lng: 25.1882,
-    image: img("photo-1507525428034-b723cf961d3e"),
-    gallery: [
-      img("photo-1507525428034-b723cf961d3e"),
-      img("photo-1519046904884-53103b34b206"),
-      img("photo-1493558103817-58b2924bce98"),
-    ],
+  ],
+},
+{
+  id: "archipelagos-seafood",
+  category: "restaurants",
+  name: { en: "Archipelagos Seafood Restaurant", gr: "Archipelagos Seafood Restaurant" },
+  shortDescription: {
+    en: "Elegant seafood dining with an island soul.",
+    gr: "Κομψό seafood dining με νησιώτικο χαρακτήρα.",
   },
-  {
-    id: "karteros-beach",
-    category: "beaches",
-    name: { en: "Karteros Beach", gr: "Παραλία Καρτερού" },
-    shortDescription: {
-      en: "Lively beach lined with bars and water sports.",
-      gr: "Ζωντανή παραλία με beach bars και θαλάσσια σπορ.",
-    },
-    description: {
-      en: "Karteros is the energetic neighbor to Amnisos — DJ sets at sunset, paddleboards on the bay, and a buzzy young crowd. The fine grey-gold sand stretches almost a kilometer.",
-      gr: "Ο ενεργητικός γείτονας του Αμνισού — DJ sets, SUP, νεανική ατμόσφαιρα. Λεπτή χρυσογκρι άμμος σχεδόν ένα χιλιόμετρο.",
-    },
-    distance: "3.6 km",
-    rating: 4.4,
-    type: { en: "Lively · Sandy", gr: "Ζωντανή · Αμμώδης" },
-    bestSeason: { en: "June – September", gr: "Ιούνιος – Σεπτέμβριος" },
-    tip: { en: "Friday evenings have live music at the central bar.", gr: "Παρασκευή βράδυ ζωντανή μουσική στο κεντρικό bar." },
-    lat: 35.3401, lng: 25.1743,
-    image: img("photo-1519046904884-53103b34b206"),
-    gallery: [
-      img("photo-1519046904884-53103b34b206"),
-      img("photo-1507525428034-b723cf961d3e"),
-      img("photo-1473496169904-658ba7c44d8a"),
-    ],
+  description: {
+    en: "Right next to Kastella on the waterfront, Archipelagos elevates the seafood experience with modern plating and a premium island aesthetic. Daily catch, fine Greek wines, and a sophisticated setting for a memorable seaside evening.",
+    gr: "Δίπλα στην Kastella, το Archipelagos ανεβάζει την εμπειρία seafood με μοντέρνο plating και premium νησιώτική αισθητική. Ψάρι ημέρας, εκλεκτά κρασιά.",
   },
-  {
-    id: "kokkini- beach",
-    category: "beaches",
-    name: { en: "Kokkini Beach", gr: "Παραλία Κοκκίνη" },
-    shortDescription: {
-      en: "Tucked-away red-sand cove for slow afternoons.",
-      gr: "Κρυμμένος κολπίσκος με κόκκινη άμμο.",
-    },
-    description: {
-      en: "Named for its rust-red sand, Kokkini Ammos is the quieter cousin further east. Sheltered, intimate, and a favorite of locals who want to escape the crowds.",
-      gr: "Ονομάστηκε από την κοκκινωπή άμμο. Πιο ήσυχη, ιδανική για όσους θέλουν να αποφύγουν τον κόσμο.",
-    },
-    distance: "6.2 km",
-    rating: 4.6,
-    type: { en: "Secluded · Red sand", gr: "Απομονωμένη · Κόκκινη άμμος" },
-    bestSeason: { en: "May – October", gr: "Μάιος – Οκτώβριος" },
-    tip: { en: "Bring water shoes — the seabed has smooth pebbles.", gr: "Φέρτε παπούτσια θαλάσσης — βότσαλα στον βυθό." },
-    lat: 35.3354, lng: 25.2021,
-    image: img("photo-1473496169904-658ba7c44d8a"),
-    gallery: [
-      img("photo-1473496169904-658ba7c44d8a"),
-      img("photo-1493558103817-58b2924bce98"),
-      img("photo-1507525428034-b723cf961d3e"),
-    ],
+  distance: "1.5 km",
+  rating: 4.8,
+  type: { en: "Seafood · Fine Dining", gr: "Θαλασσινά · Fine Dining" },
+  bestSeason: { en: "Spring to autumn", gr: "Άνοιξη – Φθινόπωρο" },
+  tip: {
+    en: "Note it closes earlier than neighbours — check hours before you go.",
+    gr: "Κλείνει νωρίτερα από τα γύρω — ελέγξτε ωράρια πριν πάτε.",
   },
-  {
-    id: "agia-pelagia",
-    category: "beaches",
-    name: { en: "Agia Pelagia Beach", gr: "Παραλία Αγίας Πελαγίας" },
-    shortDescription: {
-      en: "Crystal cove sheltered between two headlands.",
-      gr: "Κρυστάλλινος κόλπος ανάμεσα σε δύο ακρωτήρια.",
-    },
-    description: {
-      en: "A horseshoe bay 20 minutes west of the apartment, ringed by white pebble shores and the clearest water on this stretch of coast. Famous for snorkeling around the rocky edges.",
-      gr: "Πέταλο κόλπου 20 λεπτά δυτικά, με λευκά βότσαλα και πεντακάθαρα νερά. Φημισμένη για snorkeling.",
-    },
-    distance: "20 km",
-    rating: 4.8,
-    type: { en: "Pebble · Snorkel", gr: "Βότσαλα · Snorkel" },
-    bestSeason: { en: "May – October", gr: "Μάιος – Οκτώβριος" },
-    tip: { en: "Take the cliffside path to a hidden second cove.", gr: "Ακολουθήστε το μονοπάτι σε δεύτερο κρυφό κόλπο." },
-    lat: 35.3798, lng: 25.0312,
-    image: img("photo-1493558103817-58b2924bce98"),
-    gallery: [
-      img("photo-1493558103817-58b2924bce98"),
-      img("photo-1507525428034-b723cf961d3e"),
-      img("photo-1519046904884-53103b34b206"),
-    ],
+  lat: 35.3419, lng: 25.1298,
+  image: image4,
+  gallery: [
+  
+  ],
+},
+{
+  id: "amalias-kitchen",
+  category: "restaurants",
+  name: { en: "Amalia's Kitchen", gr: "Amalia's Kitchen" },
+  shortDescription: {
+    en: "Homestyle Greek cooking in a warm, cosy setting.",
+    gr: "Σπιτική ελληνική μαγειρική σε ζεστό, cozy περιβάλλον.",
   },
+  description: {
+    en: "Amalia's Kitchen is the kind of place that feels like a family table. Traditional recipes, friendly service, and a relaxed Mediterranean mood make it perfect for visitors looking for an unhurried, local dining experience in central Heraklion.",
+    gr: "Η κουζίνα της Αμαλίας είναι σαν οικογενειακό τραπέζι. Παραδοσιακές συνταγές, φιλική εξυπηρέτηση και χαλαρή μεσογειακή ατμόσφαιρα.",
+  },
+  distance: "1.2 km",
+  rating: 4.6,
+  type: { en: "Greek · Casual", gr: "Ελληνική · Casual" },
+  bestSeason: { en: "Year-round", gr: "Όλο τον χρόνο" },
+  tip: {
+    en: "Open from midday — great for a relaxed lunch before sightseeing.",
+    gr: "Ανοιχτό από μεσημέρι — ιδανικό για χαλαρό γεύμα πριν τις εκδρομές.",
+  },
+  lat: 35.3405, lng: 25.1314,
+  image: image6 ,
+  gallery: []
+  
+},
+{
+  id: "kouzeineri",
+  category: "restaurants",
+  name: { en: "Kouzeineri", gr: "KOUZEINERI" },
+  shortDescription: {
+    en: "Contemporary Greek kitchen with stylish urban flair.",
+    gr: "Σύγχρονη ελληνική κουζίνα με urban στυλ.",
+  },
+  description: {
+    en: "Set on Agios Titos square in the heart of Heraklion, Kouzeineri marries traditional Greek flavours with contemporary cooking techniques and sharp, modern presentation. A popular upscale dinner destination that stays open late.",
+    gr: "Στην Αγίου Τίτου, το Kouzeineri ενώνει παραδοσιακές γεύσεις με σύγχρονες τεχνικές και έντονο, μοντέρνο plating. Δημοφιλής επιλογή για upscale βραδινό.",
+  },
+  distance: "1.1 km",
+  rating: 4.7,
+  type: { en: "Modern Greek · Upscale", gr: "Μοντέρνα Ελληνική · Upscale" },
+  bestSeason: { en: "Year-round", gr: "Όλο τον χρόνο" },
+  tip: {
+    en: "Open until midnight — ideal if you're eating on a late Greek schedule.",
+    gr: "Ανοιχτό μέχρι τα μεσάνυχτα — ιδανικό για αργό ελληνικό δείπνο.",
+  },
+  lat: 35.3395, lng: 25.1341,
+  image: image3,
+  gallery: [
+   
+  ],
+},
 
   // ATTRACTIONS
   {

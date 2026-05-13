@@ -10,7 +10,7 @@ import image5IMG from "@/assets/slider-5.jpeg";
 import image6IMG from "@/assets/slider-6.jpeg";
 import image7IMG from "@/assets/slider-7.jpeg";
 import image8IMG from "@/assets/slider-8.jpeg";
-import image9IMG from "@/assets/slider-9.jpeg";
+import image9IMG from "@/assets/slider-4.jpeg";
 
 export const Route = createFileRoute("/apartment")({
   head: () => ({
@@ -28,7 +28,7 @@ const GALLERY = [
   { src: image2IMG, label: { en: "Living area", gr: "Καθιστικό" } },
   { src: image7IMG, label: { en: "Kitchen", gr: "Κουζίνα" } },
   { src: image4IMG, label: { en: "Second bedroom", gr: "Δεύτερο υπνοδωμάτιο" } },
-  { src: image6IMG, label: { en: "Modern bathroom", gr: "Σύγχρονο μπάνιο" } },
+  { src: image9IMG, label: { en: "Modern bathroom", gr: "Σύγχρονο μπάνιο" } },
 ];
 
 const FEATURES = [
