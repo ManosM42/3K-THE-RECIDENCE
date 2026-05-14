@@ -159,7 +159,8 @@ export function Footer() {
           </p>
         </div>
         <div className="text-xs tracking-luxury uppercase text-white/40">
-          © {new Date().getFullYear()} 3K The Residence · Heraklion · Crete
+          © {new Date().getFullYear()} 3K The Residence · Kaliseridon 3, Heraklion Crete 
+
         </div>
       </div>
     </footer>
