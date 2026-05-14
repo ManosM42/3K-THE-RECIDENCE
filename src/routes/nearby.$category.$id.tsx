@@ -101,22 +101,7 @@ function PlaceDetail() {
         </motion.aside>
       </section>
 
-      <section className="px-6 md:px-16 max-w-6xl mx-auto pb-20">
-        <h2 className="font-display text-3xl text-white mb-6">{pick(t.common.gallery, lang)}</h2>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-          {place.gallery.map((g, i) => (
-            <motion.button
-              key={i}
-              initial={{ opacity: 0, scale: 0.96 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.06 }}
-              onClick={() => setLightbox(g)}
-              className="aspect-[4/3] overflow-hidden rounded-lg group"
-            >
-              <img src={g} alt="" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-            </motion.button>
-          ))}
-        </div>
-      </section>
+  
 
       <section className="px-6 md:px-16 max-w-6xl mx-auto pb-24">
         <h2 className="font-display text-3xl text-white mb-6">{pick(t.common.map, lang)}</h2>

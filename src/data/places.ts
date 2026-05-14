@@ -48,7 +48,7 @@ export type Place = {
   lat: number;
   lng: number;
   image: string;
-  gallery: string[];
+
 };
 
 const img = (id: string, w = 1600) =>
@@ -78,7 +78,7 @@ export const places: Place[] = [
     },
     lat: 35.340216060873225, lng: 25.132607285295112,
     image: image ,
-    gallery: []
+   
   },
 {
   id: "apiri-greek-eatery",
@@ -102,7 +102,7 @@ export const places: Place[] = [
   },
   lat: 35.33844741062669, lng: 25.131128859592522,
   image: image5 ,
-  gallery: []
+  
   
 },
 {
@@ -127,9 +127,9 @@ export const places: Place[] = [
   },
   lat: 35.342681949400315, lng: 25.134286008312042,
   image: image7,
-  gallery: [
+
    
-  ],
+  
 },
 {
   id: "chalali",
@@ -153,9 +153,7 @@ export const places: Place[] = [
   },
   lat: 35.33685945643513, lng: 25.130399973624925,
   image: image8,
-  gallery: [
-    
-  ],
+ 
 },
 {
   id: "kastella-seafood",
@@ -179,9 +177,7 @@ export const places: Place[] = [
   },
   lat: 35.34282218631425, lng: 25.13310425707597,
   image: image2,
-  gallery: [
-
-  ],
+ 
 },
 {
   id: "archipelagos-seafood",
@@ -205,9 +201,7 @@ export const places: Place[] = [
   },
   lat: 35.34280720548324, lng: 25.1329350329724,
   image: image4,
-  gallery: [
-  
-  ],
+
 },
 {
   id: "amalias-kitchen",
@@ -231,7 +225,7 @@ export const places: Place[] = [
   },
   lat: 35.3405420685142, lng: 25.133612281184305,
   image: image6 ,
-  gallery: []
+  
   
 },
 {
@@ -256,9 +250,7 @@ export const places: Place[] = [
   },
   lat: 35.34046891106718, lng: 25.135475439566303,
   image: image3,
-  gallery: [
-   
-  ],
+
 },
 
 // BEACHES
@@ -284,7 +276,7 @@ export const places: Place[] = [
     },
     lat: 35.33183012410901, lng: 25.199962600467465,
     image: beach,
-    gallery: [],
+   
   },
   {
     id: "ammoudara",
@@ -308,7 +300,7 @@ export const places: Place[] = [
     },
     lat: 35.337504309378176, lng: 25.087553302965535,
     image: beach2,
-    gallery: [],
+    
   },
   {
     id: "psaromoura",
@@ -332,7 +324,7 @@ export const places: Place[] = [
     },
     lat: 35.41321225454655, lng: 25.016608328086594, 
     image: beach3,
-    gallery: [],
+
   },
   {
     id: "lygaria",
@@ -356,7 +348,7 @@ export const places: Place[] = [
     },
     lat: 35.3988199087793, lng: 25.027320949977454,
     image: beach4,
-    gallery: [],
+    
   },
 {
     id: "kokkini-hani",
@@ -380,7 +372,7 @@ export const places: Place[] = [
     },
     lat: 35.33207372045652, lng: 25.256214888674098,
     image: beach5,
-    gallery: [],
+  
   },
 
  // ATTRACTIONS
@@ -403,7 +395,7 @@ export const places: Place[] = [
     tip: { en: "Arrive at opening to beat the cruise ship crowds.", gr: "Φτάστε νωρίς το πρωί πριν τα κρουαζιερόπλοια." },
     lat: 35.29803130920095, lng: 25.16275486350167, 
     image: attra,
-    gallery: [],
+   
   },
   {
     id: "archaeological-museum",
@@ -424,7 +416,7 @@ export const places: Place[] = [
     tip: { en: "Buy a combo ticket with Knossos to save 20%.", gr: "Πάρτε συνδυασμένο εισιτήριο με Κνωσό και γλιτώστε 20%." },
     lat: 35.33901718251801, lng: 25.137149533563537,
     image: attra2,
-    gallery: [],
+   
   },
   {
     id: "koules-fortress",
@@ -445,7 +437,7 @@ export const places: Place[] = [
     tip: { en: "Walk the long pier behind the fort at sunset — the light is extraordinary.", gr: "Περπατήστε τη μακρά προβλήτα πίσω από τον Κούλε στο ηλιοβασίλεμα." },
     lat: 35.344641380053886, lng: 25.136893380316856,
     image: attra3,
-    gallery: [],
+    
   },
   {
     id: "historical-museum",
@@ -466,7 +458,7 @@ export const places: Place[] = [
     tip: { en: "Don't miss the El Greco room on the first floor.", gr: "Μην χάσετε την αίθουσα Ελ Γκρέκο στον πρώτο όροφο." },
     lat: 35.3419407934156, lng: 25.130922753733625,
     image: attra4,
-    gallery: [],
+    
   },
   {
     id: "natural-history-museum",
@@ -487,7 +479,7 @@ export const places: Place[] = [
     tip: { en: "The earthquake simulator is a highlight — kids love it.", gr: "Ο προσομοιωτής σεισμού είναι από τα πιο εντυπωσιακά εκθέματα." },
     lat: 35.34194082508471, lng: 25.126686332518645,
     image: attra5,
-    gallery: [],
+ 
   },
   {
     id: "morosini-fountain",
@@ -508,7 +500,7 @@ export const places: Place[] = [
     tip: { en: "Grab a coffee from one of the surrounding cafés and watch the city go by.", gr: "Πιείτε καφέ σε ένα από τα γύρω καφέ και απολαύστε τη ζωή της πλατείας." },
     lat: 35.33914272402486, lng: 25.133172272410008,
     image: attra6,
-    gallery: [],
+ 
   },
   {
     id: "venetian-loggia",
@@ -529,7 +521,7 @@ export const places: Place[] = [
     tip: { en: "Step inside the courtyard — the architecture is best appreciated from within.", gr: "Μπείτε στην αυλή — η αρχιτεκτονική φαίνεται καλύτερα από μέσα." },
     lat: 35.33983200002686, lng: 25.134003295418594,
     image: attra7,
-    gallery: [],
+   
   },
   {
     id: "agios-titos",
@@ -550,7 +542,7 @@ export const places: Place[] = [
     tip: { en: "The church houses the skull relic of Saint Titos — a deeply venerated object.", gr: "Ο ναός φυλάσσει την κάρα του Αγίου Τίτου, ένα πολύτιμο ιερό λείψανο." },
     lat: 35.34013831574252, lng: 25.13457997034743,
     image: attra8,
-    gallery: [],
+   
   },
   {
     id: "agios-minas-cathedral",
@@ -571,7 +563,7 @@ export const places: Place[] = [
     tip: { en: "Visit on a Sunday morning to hear the cathedral choir.", gr: "Επισκεφθείτε Κυριακή πρωί για να ακούσετε τη χορωδία." },
     lat: 35.337659368037954, lng: 25.13095071987684,
     image: attra9,
-    gallery: [],
+    
   },
   {
     id: "kazantzakis-museum",
@@ -592,7 +584,7 @@ export const places: Place[] = [
     tip: { en: "Located in Myrtia village — combine it with a drive through the Cretan countryside.", gr: "Βρίσκεται στη Μυρτιά — συνδυάστε το με βόλτα στην κρητική ύπαιθρο." },
     lat: 35.234924535913976, lng: 25.20955428095438,
     image: attra10,
-    gallery: [],
+   
   },
 
   // ENTERTAINMENT
@@ -615,7 +607,7 @@ export const places: Place[] = [
     tip: { en: "Sit on the outdoor terrace facing the harbor.", gr: "Καθίστε στην εξωτερική βεράντα προς το λιμάνι." },
     lat: 35.341118656819944, lng: 25.1190955669926,
     image: enter1,
-    gallery: [],
+  
   },
   {
     id: "bowling",
@@ -636,7 +628,7 @@ export const places: Place[] = [
     tip: { en: "Book a lane in advance on weekends.", gr: "Κλείστε lane εκ των προτέρων τα Σαββατοκύριακα." },
     lat: 35.33967569873855, lng: 25.14312012282288,
     image: enter2,
-    gallery: [],
+  
   },
   {
     id: "luna-park-katerina",
@@ -657,7 +649,7 @@ export const places: Place[] = [
     tip: { en: "Best enjoyed at sunset with a walk along the harbour.", gr: "Ιδανικό στο ηλιοβασίλεμα με βόλτα στο λιμάνι." },
     lat: 35.340752176643925, lng: 25.14439685431772,
     image: enter3,
-    gallery: [],
+   
   },
   {
     id: "xalavro",
@@ -678,7 +670,7 @@ export const places: Place[] = [
     tip: { en: "The courtyard fills up fast — arrive early for a good spot.", gr: "Η αυλή γεμίζει γρήγορα — ελάτε νωρίς." },
     lat: 35.33905749856544, lng: 25.13522283629178,
     image: enter4,
-    gallery: [],
+    
   },
   {
     id: "swing-thing",
@@ -699,7 +691,7 @@ export const places: Place[] = [
     tip: { en: "Ask for the seasonal cocktail menu — it changes regularly.", gr: "Ζητήστε το εποχικό μενού cocktails." },
     lat: 35.339927627126286, lng: 25.133698379476666,
     image: enter5,
-    gallery: [],
+  
   },
   {
     id: "bitters-bar",
@@ -720,7 +712,7 @@ export const places: Place[] = [
     tip: { en: "Great for groups — the bar team handles large orders with ease.", gr: "Ιδανικό για παρέες — η ομάδα χειρίζεται μεγάλες παραγγελίες άψογα." },
     lat: 35.338970513017706, lng: 25.132783493915596,
     image: enter6,
-    gallery: [],
+    
   },
   {
     id: "bofor",
@@ -741,7 +733,7 @@ export const places: Place[] = [
     tip: { en: "Check their social media for upcoming live events.", gr: "Δείτε τα social media τους για live events." },
     lat: 35.340732619508984, lng: 25.138045491644466,
     image: enter7,
-    gallery: [],
+  
   },
   {
     id: "stone-project",
@@ -762,7 +754,7 @@ export const places: Place[] = [
     tip: { en: "The industrial interior is great — grab a spot near the bar.", gr: "Πιάστε θέση κοντά στο μπαρ για την καλύτερη εμπειρία." },
     lat: 35.33891962127242, lng: 25.135329329456138,
     image: enter8,
-    gallery: [],
+    
   },
   {
     id: "domes",
@@ -783,7 +775,7 @@ export const places: Place[] = [
     tip: { en: "Reserve for weekend evenings — it gets packed after 10 PM.", gr: "Κάντε κράτηση τα Σαββατοκύριακα — γεμίζει μετά τις 10." },
     lat: 35.340027672874484, lng: 25.133837132181274,
     image: enter9,
-    gallery: [],
+   
   },
 ];
 
