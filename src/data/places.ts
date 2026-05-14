@@ -275,7 +275,7 @@ export const places: Place[] = [
       gr: "Νεανική παραλία κοντά στο αεροδρόμιο με beach bars, άμμο και αρκετό κόσμο το καλοκαίρι. Πολύ εύκολη πρόσβαση από την πόλη.",
     },
     distance: "5.3 km",
-    rating: 6.5,
+    rating: 4.5,
     type: { en: "Sandy beach · Beach bars", gr: "Αμμώδης · Beach bars" },
     bestSeason: { en: "May – October", gr: "Μάιος – Οκτώβριος" },
     tip: {

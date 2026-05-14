@@ -206,6 +206,54 @@ function AboutSection() {
     </section>
   );
 }
+function BookingBanner() {
+  const { lang } = useI18n();
+  return (
+    <section className="py-16 px-6 md:px-16 max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+        className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-8 md:px-14 py-10 flex flex-col sm:flex-row items-center justify-between gap-6"
+      >
+        {/* subtle gradient accents */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-12 -left-12 w-48 h-48 rounded-full bg-amber/10 blur-3xl" />
+          <div className="absolute -bottom-12 -right-12 w-48 h-48 rounded-full bg-amber/5 blur-3xl" />
+        </div>
+
+        <div className="relative z-10">
+          <p className="text-xs tracking-luxury uppercase text-amber mb-2">
+            {lang === "gr" ? "Κρατήστε Θέση" : "Reserve Your Stay"}
+          </p>
+          <h3 className="font-display text-2xl md:text-3xl text-white leading-snug">
+            {lang === "gr" ? "Διαθέσιμο στο Booking.com" : "Available on Booking.com"}
+          </h3>
+          <p className="text-white/50 text-sm mt-1 max-w-sm">
+            {lang === "gr"
+              ? "Ελέγξτε διαθεσιμότητα και κρατήστε απευθείας με ασφάλεια."
+              : "Check availability and book securely with instant confirmation."}
+          </p>
+        </div>
+
+        
+        <a  href="https://www.booking.com/hotel/gr/k3-the-residence.el.html?aid=318615&label=New_Greek_EL_GR_27026349385-QXtLJSPeIP_80J0br3yCkwS217289183938%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-199483742665%3Alp9230143%3Ali%3Adec%3Adm&sid=3cd9e81a714086fe1c330f4d55e3fb7b&dest_id=900063017&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1778521926&srpvid=fa4f7d96957f0691&type=total&ucfs=1&activeTab=photosGallery&chal_t=1778764351989&force_referer="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative z-10 flex-shrink-0 inline-flex items-center gap-3 bg-[#003580] hover:bg-[#00297a] transition-colors text-white px-7 py-3.5 rounded-md text-sm font-semibold tracking-wide shadow-lg shadow-[#003580]/30"
+        >
+          {/* Booking.com "b." wordmark */}
+          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="17" fontFamily="Georgia, serif" fontSize="17" fontWeight="bold" fill="white">b.</text>
+          </svg>
+          <span>booking.com</span>
+          <ArrowRight className="w-4 h-4 opacity-70" />
+        </a>
+      </motion.div>
+    </section>
+  );
+}
 function CategoryRow({ category }: { category: Category }) {
   const { lang } = useI18n();
   const meta = categoryMeta[category];
@@ -270,6 +318,7 @@ function Home() {
     <>
       <HeroSlider />
       <AboutSection />
+      <BookingBanner />           {/* ← add this line */}
       <CategoryRow category="restaurants" />
       <CategoryRow category="beaches" />
       <CategoryRow category="attractions" />
