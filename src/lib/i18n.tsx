@@ -38,7 +38,7 @@ const STRINGS = {
     stats: [
       { value: 2, label: { en: "Bedrooms", gr: "Υπνοδωμάτια" } },
       { value: 4, label: { en: "Guests", gr: "Επισκέπτες" } },
-      { value: 5, label: { en: "Min to Port", gr: "Λεπτά στο Λιμάνι" } },
+      { value: 1, label: { en: "Min to Port", gr: "Λεπτό στο Λιμάνι" } },
     ],
   },
   findUs: {

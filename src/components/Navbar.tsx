@@ -154,8 +154,8 @@ export function Footer() {
           <div className="font-display text-3xl text-amber">3K The Residence</div>
           <p className="text-sm text-white/50 mt-2 max-w-xs">
             {lang === "en"
-              ? "A private retreat in Heraklion, Crete — one minute from the sea."
-              : "Ιδιωτική κατοικία στο Ηράκλειο της Κρήτης — ένα λεπτό από τη θάλασσα."}
+              ? "A private retreat in Heraklion, Crete — one minute from the port."
+              : "Ιδιωτική κατοικία στο Ηράκλειο της Κρήτης — ένα λεπτό από το λιμάνι."}
           </p>
         </div>
         <div className="text-xs tracking-luxury uppercase text-white/40">
