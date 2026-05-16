@@ -124,8 +124,8 @@ function Contact() {
           className="lg:col-span-2 space-y-4"
         >
           <ContactCard icon={<MapPin className="w-5 h-5" />} title={lang === "en" ? "Location" : "Τοποθεσία"} value="Heraklion, Crete, Greece" />
-          <ContactCard icon={<Mail className="w-5 h-5" />} title="Email" value="stay@3ktheresidence.com" />
-          <ContactCard icon={<Phone className="w-5 h-5" />} title={lang === "en" ? "Phone" : "Τηλέφωνο"} value="+30 2810 000 000" />
+          <ContactCard icon={<Mail className="w-5 h-5" />} title="Email" value="g.kalathakiss@gmail.com" />
+          <ContactCard icon={<Phone className="w-5 h-5" />} title={lang === "en" ? "Phone" : "Τηλέφωνο"} value="+30 698 565 4727" />
         </motion.div>
       </div>
 
