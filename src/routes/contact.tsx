@@ -302,7 +302,7 @@ function BookingPage() {
                 focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
               style={{ border: "1px solid rgba(255,255,255,0.12)" }}
             >
-              {[1,2,3,4,5,6,7,8].map((n) => (
+              {[1,2,3,4].map((n) => (
                 <option key={n} value={n} style={{ background: navy }}>
                   {n} {lang === "gr" ? (n === 1 ? "επισκέπτης" : "επισκέπτες") : (n === 1 ? "guest" : "guests")}
                 </option>
