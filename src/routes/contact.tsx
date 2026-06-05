@@ -422,7 +422,7 @@ function BookingPage() {
         </div>
       </motion.div>
 
-      {/* ── Price Summary ──────────────────────────────────────────────────── */}
+      {/* ── Price Summary ─────────────────────────────────────────────────── */}
       <AnimatePresence>
         {checkIn && checkOut && (
           <motion.div
