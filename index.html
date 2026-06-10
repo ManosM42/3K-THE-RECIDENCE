@@ -1,29 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
-    <title>3K The Recidence</title>
- 
-    <meta
-      name="description"
-      content="3K The Recidence"
-    />
- 
-    <meta name="theme-color" content="#0f172a" />
- 
-    <link rel="icon" href="/logo.png" />
- 
 
-    <meta property="og:title" content="3K The Recidence" />
-    <meta
-      property="og:description"
-      content="Experience luxury and comfort in our premium apartment, perfect for your next stay."
-    />
+    <title>3K The Residence — Luxury Apartment in Heraklion, Crete</title>
+
+    <meta name="description" content="Luxury vacation apartment in Heraklion, Crete. 2 bedrooms, private garden, balcony, free WiFi. 1km from Heraklion Airport, walking distance to the Venetian Harbor and Koules Fortress." />
+    <meta name="keywords" content="vacation rental heraklion, luxury apartment crete, short stay heraklion, 3k the residence, ηράκλειο διαμέρισμα, κρήτη ενοικίαση" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="icon" href="/logo.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="3K The Residence — Luxury Apartment in Heraklion, Crete" />
+    <meta property="og:description" content="Experience luxury and comfort in our premium 2-bedroom apartment in Heraklion. Private garden, balcony, free WiFi, fully equipped kitchen. Near Archaeological Museum, Venetian Harbor and Koules." />
     <meta property="og:type" content="website" />
- 
-   
+    <meta property="og:url" content="https://3ktheresidence.gr" />
+    <meta property="og:image" content="https://3ktheresidence.gr/og-image.jpg" />
+    <meta property="og:locale" content="el_GR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="3K The Residence — Heraklion, Crete" />
+    <meta name="twitter:description" content="Luxury 2-bedroom apartment in Heraklion, Crete. Garden, balcony, free WiFi, 1km from airport." />
+    <meta name="twitter:image" content="https://3ktheresidence.gr/og-image.jpg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://3ktheresidence.gr" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VacationRental",
+      "name": "3K The Residence",
+      "description": "Luxury 2-bedroom vacation apartment in Heraklion, Crete. Features private garden, balcony, free WiFi, air conditioning, and fully equipped kitchen. 1km from Heraklion International Airport.",
+      "url": "https://3ktheresidence.gr",
+      "image": "https://3ktheresidence.gr/og-image.jpg",
+      "telephone": "",
+      "email": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Heraklion",
+        "addressRegion": "Crete",
+        "addressCountry": "GR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.3387,
+        "longitude": 25.1442
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Garden", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Balcony", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Fully Equipped Kitchen", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Towels & Linens", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Refrigerator", "value": true }
+      ],
+      "numberOfRooms": 2,
+      "nearbyAttraction": [
+        {
+          "@type": "TouristAttraction",
+          "name": "Heraklion Archaeological Museum",
+          "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Koules Fortress",
+          "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Heraklion Venetian Harbor",
+          "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-27N294FY3R"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -31,25 +91,19 @@
       gtag('js', new Date());
       gtag('config', 'G-27N294FY3R');
     </script>
- 
-    
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
- 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
- 
+
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
- 
+
     <div id="root"></div>
     <script type="module" src="/src/client.tsx"></script>
   </body>
 </html>
- 
