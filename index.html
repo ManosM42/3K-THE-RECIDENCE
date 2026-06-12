@@ -33,55 +33,70 @@
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
+  
+{
+  "@context": "https://schema.org",
+  "@type": "VacationRental",
+  "name": "3K The Residence",
+  "identifier": "3k-the-residence-heraklion",
+  "description": "Luxury 2-bedroom vacation apartment in Heraklion, Crete. Features private garden, balcony, free WiFi, air conditioning, and fully equipped kitchen. 1km from Heraklion International Airport.",
+  "url": "https://3ktheresidence.gr",
+  "image": [
+    "https://3ktheresidence.gr/og-image.jpg",
+    "https://3ktheresidence.gr/images/photo1.jpg",
+    "https://3ktheresidence.gr/images/photo2.jpg",
+    "https://3ktheresidence.gr/images/photo3.jpg",
+    "https://3ktheresidence.gr/images/photo4.jpg",
+    "https://3ktheresidence.gr/images/photo5.jpg",
+    "https://3ktheresidence.gr/images/photo6.jpg",
+    "https://3ktheresidence.gr/images/photo7.jpg"
+  ],
+  "telephone": "",
+  "email": "",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Heraklion",
+    "addressRegion": "Crete",
+    "addressCountry": "GR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.3387,
+    "longitude": 25.1442
+  },
+  "containsPlace": {
+    "@type": "Accommodation",
+    "name": "3K The Residence - Main Apartment",
+    "numberOfRooms": 2,
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Garden", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Balcony", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Fully Equipped Kitchen", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Towels & Linens", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Refrigerator", "value": true }
+    ]
+  },
+  "nearbyAttraction": [
     {
-      "@context": "https://schema.org",
-      "@type": "VacationRental",
-      "name": "3K The Residence",
-      "description": "Luxury 2-bedroom vacation apartment in Heraklion, Crete. Features private garden, balcony, free WiFi, air conditioning, and fully equipped kitchen. 1km from Heraklion International Airport.",
-      "url": "https://3ktheresidence.gr",
-      "image": "https://3ktheresidence.gr/og-image.jpg",
-      "telephone": "",
-      "email": "",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Heraklion",
-        "addressRegion": "Crete",
-        "addressCountry": "GR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 35.3387,
-        "longitude": 25.1442
-      },
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Garden", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Balcony", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Fully Equipped Kitchen", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Towels & Linens", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Refrigerator", "value": true }
-      ],
-      "numberOfRooms": 2,
-      "nearbyAttraction": [
-        {
-          "@type": "TouristAttraction",
-          "name": "Heraklion Archaeological Museum",
-          "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
-        },
-        {
-          "@type": "TouristAttraction",
-          "name": "Koules Fortress",
-          "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
-        },
-        {
-          "@type": "TouristAttraction",
-          "name": "Heraklion Venetian Harbor",
-          "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
-        }
-      ]
+      "@type": "TouristAttraction",
+      "name": "Heraklion Archaeological Museum",
+      "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Koules Fortress",
+      "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Heraklion Venetian Harbor",
+      "address": { "@type": "PostalAddress", "addressLocality": "Heraklion" }
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-27N294FY3R"></script>
